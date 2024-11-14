@@ -13,7 +13,7 @@ public class Entrenador {
     }
 
     
-    public void agregarPokemon(Pokemon pokemon) {
+    public void agregarPokemon(pokemones pokemon) {
         pokemones.add(pokemon);
         System.out.println(pokemon.getNombre() + " ha sido añadido al equipo de " + nombre + ".");
     }

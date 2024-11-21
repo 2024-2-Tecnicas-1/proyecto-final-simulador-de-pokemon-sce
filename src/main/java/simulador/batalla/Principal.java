@@ -32,10 +32,10 @@ public class Principal {
 
             switch (opcion) {
                 case 0:
-                    gestionarEntrenador(entrenador1, growlithe, psyduck, bellsprout, voltorb);
+                    gestionarEntrenador(entrenador1, growlithe, psyduck, bellsprout, voltorb, tentacool);
                     break;
                 case 1:
-                    gestionarEntrenador(entrenador2, exeggcute, onix, zubat, farfetchd);
+                    gestionarEntrenador(entrenador2, exeggcute, onix, zubat, farfetchd,hitmonlee);
                     break;
                 case 2:
                     iniciarBatalla(entrenador1, entrenador2);

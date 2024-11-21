@@ -1,5 +1,5 @@
 
-package com.mycompany.principal;
+package simulador.batalla;
 
 public abstract class Pokemon {
     private String nombre;

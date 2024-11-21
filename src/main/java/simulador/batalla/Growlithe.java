@@ -1,13 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package simulador.batalla;
 
-/**
- *
- * @author User
- */
-public class Growlithe {
+
+public class Growlithe extends Pokemon {
+     public Growlithe(String nombre) {
+        super(nombre, 55, 70, TipoPokemon.FUEGO);
+    }
+
     
+     @Override
+    public void atacar(Pokemon oponente) {
+        double multiplicador = TipoPokemon.obtenerMultiplicadorDeDaño(this.getTipo(), oponente.getTipo());
+        int daño = (int) (this.getPuntosDeAtaque() * multiplicador);
+        oponente.recibirDaño(daño);
+    }
 }
+    
+

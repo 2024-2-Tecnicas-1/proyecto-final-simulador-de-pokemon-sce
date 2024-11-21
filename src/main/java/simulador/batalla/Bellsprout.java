@@ -2,7 +2,6 @@
 package simulador.batalla;
 
 
-public class Bellsprout {
 public class Bellsprout extends Pokemon {
     public Bellsprout(String nombre) {
         super(nombre, 50, 75, TipoPokemon.PLANTA);
@@ -14,5 +13,4 @@ public class Bellsprout extends Pokemon {
         int daño = (int) (this.getPuntosDeAtaque() * multiplicador);
         oponente.recibirDaño(daño);
     }
-}
 }

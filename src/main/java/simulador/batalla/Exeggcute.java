@@ -1,7 +1,6 @@
 
 package simulador.batalla;
 
-public class Exeggcute {
     public class Exeggcute extends Pokemon {
     public Exeggcute(String nombre) {
         super(nombre, 60, 40, TipoPokemon.PLANTA);
@@ -15,4 +14,4 @@ public class Exeggcute {
     }
 }
 
-}
+

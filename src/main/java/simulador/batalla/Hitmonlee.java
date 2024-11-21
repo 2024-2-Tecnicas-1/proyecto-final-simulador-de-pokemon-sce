@@ -1,13 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package simulador.batalla;
 
-/**
- *
- * @author User
- */
-public class Hitmonlee {
+
+public class Hitmonlee extends Pokemon {
+    public Hitmonlee (String nombre){
+    super(nombre, 50, 120, TipoPokemon.LUCHA);
+    }
     
+    @Override
+    public void atacar (Pokemon oponente){
+    double multiplicador = TipoPokemon.obtenerMultiplicadorDeDaño(this.getTipo(), oponente.getTipo());
+    int daño = (int) (this.getPuntosDeAtaque()*multiplicador);
+    oponente.recibirDaño(daño);
+    }
 }

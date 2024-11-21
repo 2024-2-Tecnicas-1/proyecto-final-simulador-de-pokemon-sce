@@ -1,4 +1,4 @@
-package simulador.entrenador;
+package simulador.batalla;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ public class Entrenador {
     }
 
     
-    public void agregarPokemon(pokemones pokemon) {
+    public void agregarPokemon(Pokemon pokemon) {
         pokemones.add(pokemon);
         System.out.println(pokemon.getNombre() + " ha sido añadido al equipo de " + nombre + ".");
     }
